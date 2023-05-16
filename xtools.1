@@ -238,6 +238,16 @@ only print main package
 .El
 .It Nm xuname
 .Nd display system info relevant for debugging Void
+.It Nm xupdatecheck Fl S | Fl m | Fl l | Ar pattern ...
+.Nd show update-check info for packages
+.Bl -tag -offset 2n -width 2n -compact
+.It Fl S
+Sync with the official update-check information, which is recommended before using the tool
+.It Fl m
+Show update-check info for all manually installed packages
+.It Fl l
+Show update-check info for all locally installed packages
+.El
 .It Nm xvoidstrap Ar dir Op Ar packages
 .Nd bootstrap a new Void installation
 .El
